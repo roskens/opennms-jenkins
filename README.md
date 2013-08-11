@@ -63,7 +63,7 @@ Jenkins / Hudson Setup
 10. Download the jenkins-cli.jar
    1. wget -q http://localhost:8080/jnlpJars/jenkins-cli.jar
 
-11. Install plugins
+11. Install plugins (script: setup.sh)
    1. CLI="java -jar jenkins-cli.jar -s http://localhost:8080/"
    2. $CLI login
    3. $CLI install-plugin analysis-core
@@ -81,7 +81,7 @@ Jenkins / Hudson Setup
    15. $CLI install-plugin warnings
    16. $CLI restart
 
-11. Setup Jobs
+11. Setup Jobs (script: setup_jobs.sh)
    1. $CLI create-job OpenNMS < jobs/OpenNMS.xml
    2. $CLI create-job OPENNMS-MASTER-COMPILE < jobs/OPENNMS-MASTER-COMPILE.xml
    3. $CLI create-job OPENNMS-MASTER-CODEREVIEW < jobs/OPENNMS-MASTER-CODEREVIEW.xml

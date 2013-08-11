@@ -9,7 +9,6 @@ Prerequisites / Recommendations
 1. Install and configure a Maven proxy (Nexus or Artifactory)
    * [Sonatype Nexus](http://www.sonatype.org/nexus/go)
    * [OpenNMS Nexus Configuration](https://github.com/OpenNMS/opennms-nexus)
-
 Each CI job that runs will clean out running users maven repository
 (~/.m2/repository) as part of the cleanup at the start of the job. Also,
 the jobs are configured to have the maven repository inside the workspace,

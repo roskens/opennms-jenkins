@@ -6,8 +6,8 @@ See also [[http://www.opennms.org/wiki/Continuous_integration|OpenNMS Continuous
 Prerequisites / Recommendations
 ===============================
 1. Install and configure a Maven proxy (Nexus or Artifactory)
-[[http://www.sonatype.org/nexus/go|Sonatype Nexus]]
-[[https://github.com/OpenNMS/opennms-nexus|OpenNMS Nexus Configuration]]
+[Sonatype Nexus](http://www.sonatype.org/nexus/go)
+[OpenNMS Nexus Configuration](https://github.com/OpenNMS/opennms-nexus)
 
 Each CI job that runs will clean out running users maven repository
 (~/.m2/repository) as part of the cleanup at the start of the job. Also,
@@ -21,7 +21,7 @@ Each CI job that runs will have its own checked out copy of the source repositor
 of the repository will help save netowrk traffic and speed up the builds.
 
 3. SonarQube 
-[[http://www.sonarqube.org/]]
+http://www.sonarqube.org/
 The OPENNMS-MASTER-CODEREVIEW job will run checkstyle, findbugs, pmd, and
 SonarQube analysis' against the workspace. If you are going to be running
 the SonarQube analysis long term, setup a local postgresql/mysql database
@@ -29,7 +29,7 @@ to store its data in.
 
 Jenkins / Hudson Setup
 ======================
-1. Install Jenkins from [[http://jenkins-ci.org]]
+1. Install Jenkins from http://jenkins-ci.org
 2. http://localhost:8080/
 3. Click 'Manage Jenkins'
 4. Click 'Manage Plugins'

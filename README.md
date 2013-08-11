@@ -29,7 +29,7 @@ to store its data in.
 
 Jenkins / Hudson Setup
 ======================
-1. Install Jenkins from http://jenkins-ci.org
+1. Install Jenkins from http://jenkins-ci.org/, or Hudson from http://hudson-ci.org/
 2. http://localhost:8080/
 3. Click 'Manage Jenkins'
 4. Click 'Manage Plugins'

@@ -9,22 +9,23 @@ Prerequisites / Recommendations
 1. Install and configure a Maven proxy (Nexus or Artifactory)
    * [Sonatype Nexus](http://www.sonatype.org/nexus/go)
    * [OpenNMS Nexus Configuration](https://github.com/OpenNMS/opennms-nexus)
-Each CI job that runs will clean out running users maven repository
-(~/.m2/repository) as part of the cleanup at the start of the job. Also,
-the jobs are configured to have the maven repository inside the workspace,
-and those will be removed as part of a 'git clean -fdx' as part of the
-shell command. Having a local proxy will also help save network traffic,
-and speed up the builds.
+
+   Each CI job that runs will clean out running users maven repository
+   (~/.m2/repository) as part of the cleanup at the start of the job. Also,
+   the jobs are configured to have the maven repository inside the workspace,
+   and those will be removed as part of a 'git clean -fdx' as part of the
+   shell command. Having a local proxy will also help save network traffic,
+   and speed up the builds.
 
 2. Setup a local git repository clone of OpenNMS.
-Each CI job that runs will have its own checked out copy of the source repository. Having a local copy
-of the repository will help save netowrk traffic and speed up the builds.
+   Each CI job that runs will have its own checked out copy of the source repository. Having a local copy
+   of the repository will help save netowrk traffic and speed up the builds.
 
 3. [SonarQube ](http://www.sonarqube.org/)
-The OPENNMS-MASTER-CODEREVIEW job will run checkstyle, findbugs, pmd, and
-SonarQube analysis' against the workspace. If you are going to be running
-the SonarQube analysis long term, setup a local postgresql/mysql database
-to store its data in.
+   The OPENNMS-MASTER-CODEREVIEW job will run checkstyle, findbugs, pmd, and
+   SonarQube analysis' against the workspace. If you are going to be running
+   the SonarQube analysis long term, setup a local postgresql/mysql database
+   to store its data in.
 
 Jenkins / Hudson Setup
 ======================

@@ -1,13 +1,14 @@
 OpenNMS Continuous Integration
 ==============================
 
-See also [[http://www.opennms.org/wiki/Continuous_integration|OpenNMS Continuous Integration]].
+See also [OpenNMS Continuous Integration](http://www.opennms.org/wiki/Continuous_integration).
+
 
 Prerequisites / Recommendations
 ===============================
 1. Install and configure a Maven proxy (Nexus or Artifactory)
-[Sonatype Nexus](http://www.sonatype.org/nexus/go)
-[OpenNMS Nexus Configuration](https://github.com/OpenNMS/opennms-nexus)
+   * [Sonatype Nexus](http://www.sonatype.org/nexus/go)
+   * [OpenNMS Nexus Configuration](https://github.com/OpenNMS/opennms-nexus)
 
 Each CI job that runs will clean out running users maven repository
 (~/.m2/repository) as part of the cleanup at the start of the job. Also,
@@ -20,8 +21,7 @@ and speed up the builds.
 Each CI job that runs will have its own checked out copy of the source repository. Having a local copy
 of the repository will help save netowrk traffic and speed up the builds.
 
-3. SonarQube 
-http://www.sonarqube.org/
+3. [SonarQube ](http://www.sonarqube.org/)
 The OPENNMS-MASTER-CODEREVIEW job will run checkstyle, findbugs, pmd, and
 SonarQube analysis' against the workspace. If you are going to be running
 the SonarQube analysis long term, setup a local postgresql/mysql database
